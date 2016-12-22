@@ -176,7 +176,7 @@ full_refresh()
                 	echo "Snapshot Directory Exists for the Target Directory. Proceeding"
                 	echo " "
         	else
-                	echo "File $snp_shot_dir_tgt doesnt exist in Source cluster $target_cluster. Please make the source directory $2 snapshottable..."
+                	echo "File $snp_shot_dir_tgt doesnt exist in target cluster $target_cluster. Please make the target directory $2 snapshottable..."
 			
 			echo "HDFS Snapshot needed for the directory  $2 in Target cluster " | mutt -s "HDFS Snapshot is needed for the directory" -- $5
         	fi
